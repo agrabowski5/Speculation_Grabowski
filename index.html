@@ -20,6 +20,14 @@
 		<section>
 			<h2>Subtheme: Speculation</h2>
 
+			<h3> Datasets: "Corporate ownership rates and owner occupancy rates in Boston neighborhoods, 2004-2024" and "Residential sales data in the City of Boston, 2000-2023"</h3>
+				The "Corporate ownership rates and owner occupancy rates in Boston neighborhoods, 2004-2024" dataset maintained information regarding the corporate ownership rates and
+				 owner occupancy rates in Boston, as well as demographic focused data. This dataset had geographic gaps and was mainly constrained to Boston neighborhoods.
+				 It also relied on census data where most data fields were not updated across multiple decades. The particular questions asked needed to be scaled to this understanding. 
+				
+				 The "Residential sales data in the City of Boston, 2000-2023" dataset contained information on housing sale information, including information
+				 regarding flip and investment types. This dataset was more geographically constrained to central boston as will be explored in the later visualizations.
+
 			<h3>Overall Analysis Questions</h3>
 				<ol>
 				<li>
@@ -67,6 +75,8 @@
 					codes enabled the delineation of neighborhood boundaries. This approach revealed notable spatial limitations within the dataset; for 
 					instance, areas such as Mission Hill, Longwood Medical Area, and the Harbor Islands lacked information on corporate ownership rates. 
 					Overall, this analysis serves as an effective introduction to the spatial dimensions and limitations of the dataset.
+					<br>
+					<strong> Key Takeaway: Dataset is constrained to Boston and Corporate Ownership rate is targetted towards downtown Boston.</strong>
 				  </figcaption>
 				</figure>
 				
@@ -80,8 +90,11 @@
 					ethnicity across various neighborhoods. Interactive tooltips offer a detailed breakdown of the proportional representation for each demographic group,
 					 thereby enhancing the granularity of the analysis. Preliminary observations from the visualization indicate that non-white populations are predominantly
 					  concentrated in the southern and eastern sectors of the city, notably within neighborhoods such as Roxbury and Mattapan. 
-					  This visualization aids in the understanding the limitations and data quality around ethnicity and race data. This visualization aims to give the viewer
-					  an understanding of the demographics of the city leading into Question 1/.
+					  This visualization aids in the understanding the limitations and data quality around ethnicity and race data. 
+					  This visualization aims to give the viewer an understanding of the demographics of the city leading into Question 1.
+					
+					  <br>
+					  <strong> Key Takeaway: Minority Populations are mostly in Roxbury and Mattapan areas, south and east of Boston. </strong>
 				  </figcaption>
 				</figure>
 			</section>
@@ -99,6 +112,8 @@
 					 rates have tended to decline, suggesting that more homes are remaining unoccupied. This trend might imply that properties are increasingly
 					  being used as investment vehicles rather than primary residences—a pattern also highlighted in the Boston Globe. This visualization operates on a 
 					  neighborhood-level granularity, however it requires further analysis to understand how this data relates to demographic information.
+					  <br>
+					  <strong> Key Takeaway: Corporate Ownership and Owner Occupancy rates are inversely related.</strong>
 				</figcaption>
 			</figure>
 			
@@ -106,10 +121,14 @@
 				<img src="Ethnicity_Breakdown_Neighborhoods_Boston_Stacked_Bar_with_Own_Occupancy_Rate.png" class="responsive-image" alt="Ethnicity Breakdown in Boston" />
 				<figcaption>
 					<strong> Boston Neighborhood Demographic Breakdown relationship to Corporate Ownership and Owner Occupancy in 2024</strong>
-					This graphic explores the relationship between corporate ownership and absentee ownership across different racial and ethnic groups. 
+					This graphic explores the relationship between corporate ownership and absentee ownership across different neighborbors with 
+					various concentrations of racial and ethnic populations. 
 					The X axis is arranged according to the proportion of non-white residents in each neighborhood, focusing specifically on data from 2024.
-					 The visualization clearly shows a negative correlation between corporate ownership rates and absentee rates—a trend that persists in other years as 
-					 well. By examining these patterns, the graphic aims to shed light on how demographics influence corporate ownership practices.
+					 The visualization continue to shows a negative correlation between corporate ownership rates and absentee rates—a trend that persists in other years as 
+					 well. However, it's difficult to see whether their is a relationship between corporate ownership and owner occupancy. We will look into 
+					 this in the next visualization. 
+					 <br>
+					  <strong> Key Takeaway: This Bar and Scatter plot did not clearly show a relationship between Corporate Ownership, Owner Occupancy, and demographics</strong>
 				</figcaption>
 			</figure>
 			
@@ -120,9 +139,12 @@
 					As a follow-up to the previous graphic, this visualization aims to determine whether corporate investment demonstrates 
 					any neighborhood-specific preferences 
 					linked to ethnicity or racial composition. In this plot, a regression analysis was applied to data spanning multiple years and neighborhoods.
-					 The results reveal an increase in corporate investment in neighborhoods predominantly composed of AAPI and White residents with the positively sloped line. 
+					 The results reveal an increase in corporate investment in neighborhoods predominantly composed of AAPI and White residents with the positively sloped 
+					 line, while Black, American Indian, and Hispanic neighborhoods exhibit a negative correlation. 
 					 This graphic not only shows the geographic distribution of corporate investment but also deepens our understanding of how demographic 
 					 factors can steer investment patterns—a trend consistent with the Boston Globe's analysis of luxury condo markets.
+					 <br>
+					  <strong> Key Takeaway: Corporate Investment is targetted towards White and AAPI neighborhoods</strong>
 				</figcaption>
 			</figure>
 
@@ -140,6 +162,8 @@
 					As the years progress, the fluctuations in flips and non-flips suggest changing economic conditions or shifts in investor behavior, 
 					which correlate with broader housing market trends such as housing bubble effects or post-recession recovery. The proposed bill to develop a
 					 local transfer fee could help reduce the incentive to flip houses, enabling a more stable housing market.
+					 <br>
+					  <strong> Key Takeaway: Flipping is a growing trend in Boston, with a significant spike in the early 2010s</strong>
 				</figcaption>
 			</figure>
 			</section>
@@ -148,10 +172,13 @@
 				<iframe src="Boston_HeatMap_NumberOfFlips.html"  width="1200" height = "600"class="iframe-container"></iframe>
 				<figcaption>
 					<strong> Distribution of Flipping Markets throughout Boston</strong> 
-					This visualization is a heatmap that illustrates the distribution of property flips across Boston. 
+					This visualization is a heatmap that illustrates the distribution of property flips across Boston, as well as this
+					 datasets geographic limitations.
 					When zoomed in,  these flips can be seen to be concentrated in specific clusters, revealing a strong centralization in 
 					certain neighborhoods. Additionally, the map underscores the limited geographical scope of the dataset—highlighting that many outliers 
 					were removed in order to focus the analysis on a more manageable area.
+					<br>
+					  <strong> Key Takeaway: Flipping is concentrated in certain neighborhoods of Boston</strong>
 				</figcaption>
 			  </figure>
 			
@@ -177,7 +204,9 @@
 					the disparity between luxury and affordable housing initiatives in Boston. This increaseed New and Expensive developments, while also increasing the  
 					number of corporate sales of the buildings.
 					
-					This brings up a question of the most expensive residential properties in Boston, who is buying them. Are they corporations or individuals?
+					This brings up a question of the most expensive residential properties in Boston and who is buying them? Are they corporations or individuals?
+					<br>
+					  <strong> Key Takeaway: New and Expensive housing is being built in Boston, with a significant portion being bought by corporations</strong>
 				</figcaption>
 			</figure>
 			</section>
@@ -194,8 +223,11 @@
 					As Discussed in the "When Private Equity becomes your Landlord" article, it can be seen that it's 
 					about split between Corporate ownership and individual ownership of these properties. This graphic aims to be a more pictorial representation
 					to show how involved corporations are in the involvement of the Boston housing market.
-					This data was filtered down by property type, and ordered by sale price. Sale Price was purposedfully not prioritized for viewing. 
+					This data was filtered down by property type, and ordered by sale price. Sale Price was purposedfully not prioritized for viewing, but instead prioritized
+					by whether the property was purchased by a corporation or individual.
 					House Image credited to Microsoft. 
+					<br>
+					  <strong> Key Takeaway: 38.21% of the most expensive residential properties in Boston are purchased by corporations</strong>
 				</figcaption>
 			</figure>
 
@@ -209,6 +241,9 @@
 					This visualization shows that the trend of corporate ownership of expensive properties is inconsistent across price ranges with 
 					corporate ownership at 2% in this bottom quartile. Although, this is expected, it is interesting to observe graphically. 
 					This data was filtered down by property type, and ordered by sale price. Sale Price was purposedfully not prioritized for viewing. House Image credited to Microsoft.
+					<br>
+					  <strong> Key Takeaway: 2% of the bottom quartile of residential properties in Boston are purchased by corporations,
+						 signifying a large difference in corporations preference in housing investments</strong>
 				</figcaption>
 			</figure>
 
@@ -270,7 +305,7 @@
 			
 			<li> 
 				
-				ChatGPT 03-mini, Accessed 2/17</li>
+				ChatGPT 4o-mini, Utilized for code creation. Accessed 2/17</li>
 			<li> 
 				<a href="http://www.zillow.com/advice-thread/Updating-Boston-Neighborhoods-Boundaries-Data/421449/">
 				  Boston Redevelopment Authority office of Digital Cartography and GIS
